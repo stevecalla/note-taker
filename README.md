@@ -53,13 +53,14 @@ This app can be enhanced by (a) allowing the user to modify notes, (b) adding ad
 
 ## App Preview - Note Page Screenshot
 
-<img alt="" src="./assets/images/home-page.png" width="100%" height="425"/>
+<!-- <img alt="" src="./assets/images/note-page.png" width="100%" height="425"/> -->
 
+<img alt="" src="public/assets/images/note-page.png" width="100%" height="425"/>
 
 ## App Preview - Video Preview
-[Link to Video](https://www.youtube.com/watch?v=_hr9SKZC5Rc&feature=youtu.be)
+[Link to Video](https://youtu.be/odtZNxBx4_c)
 
-<img alt="" src="./assets/images/app-video-demo.gif" width="100%" height="425"/>
+<img alt="" src="./assets/images/note-taker-video.gif" width="100%" height="425"/>
 
 ## Tests
 
