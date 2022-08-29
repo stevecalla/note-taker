@@ -1,140 +1,128 @@
-# 11 Express.js: Note Taker
+# NOTE TAKER 
+[![License:  MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Your Task
+## Index
 
-Your assignment is to modify starter code to create an application called Note Taker that can be used to write and save notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file.
+1. [Description](#description)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Features](#features)
+5. [Future Enhancements](#future-enhancements)
+6. [Contributing](#contributing)
+7. [Resources](#resources)
+8. [License](#license)
 
-The application’s front end has already been created. It's your job to build the back end, connect the two, and then deploy the entire application to Heroku.
-
-
-## User Story
-
-```
-AS A small business owner
-I WANT to be able to write and save notes
-SO THAT I can organize my thoughts and keep track of tasks I need to complete
-```
-
-
-## Acceptance Criteria
+## Description
 
 ```
-GIVEN a note-taking application
-WHEN I open the Note Taker
-THEN I am presented with a landing page with a link to a notes page
-WHEN I click on the link to the notes page
-THEN I am presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column
-WHEN I enter a new note title and the note’s text
-THEN a Save icon appears in the navigation at the top of the page
-WHEN I click on the Save icon
-THEN the new note I have entered is saved and appears in the left-hand column with the other existing notes
-WHEN I click on an existing note in the list in the left-hand column
-THEN that note appears in the right-hand column
-WHEN I click on the Write icon in the navigation at the top of the page
-THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
+This app allows the user to track tasks by providng the ability to write, save and delete notes. When the user opens Note Taker, a landing page is presented with a link to the notes page. After clicking on the link to the notes page the user is presented with a list of existing notes in the left hand column along a note taking feature in the right hand column. 
+
+The user can use the note taking feature to enter the note title and text then click the save button to populate the note in the left hand column with other notes. If the user would like to enter another note, the plus symbol clears the note taking feature. If the user would like delete a note they can click on the delete (trash) icon. 
 ```
 
+## Installation
 
-## Mock-Up
+(1) Fork the repo, (2) Clone the forked repo locally, (3) Run "npm install" (to install the NPM Express dependency), (4) Run "node server.js" to start the server (from the root directory), (5) To open the home page go to http://localhost:3001/. 
 
-The following images show the web application's appearance and functionality:
+If you'd like to use NPM nodemon as/if you make changes to the code, please install nodemon as a development dependency using "npm install --save-dev nodemon" (see https://www.npmjs.com/package//nodemon).
 
-![Existing notes are listed in the left-hand column with empty fields on the right-hand side for the new note’s title and text.](./assets/images/11-express-homework-demo-01.png)
+## Usage
 
-![Note titled “Balance accounts” reads, “Balance account books by end of day Monday,” with other notes listed on the left.](./assets/images/11-express-homework-demo-02.png)
+This app creates a website which allows a user to track tasks by enter notes for each task.
 
+## Features
 
-## Getting Started
+This app includes features such as (a) the ability to enter a note title and text, (b) the ability to save each note, (c) the ability to delete each note.
+<!-- 
+1. TBD
+2. TBD
+3. TBD
+-->
+## Future Enhancements
 
-On the back end, the application should include a `db.json` file that will be used to store and retrieve notes using the `fs` module.
+This app can be enhanced by (a) allowing the user to modify notes, (b) adding additional note fields such as date entered (as a default, due date, a status for each note (such as todo, in progress, complete) as an icon or drop down and more, (c) the ability to sort notes based on various criteria such as date due or status or using drag and drop functionality, (d) the ability to archive notes or group notes based on common tasks, and (e) more.
+<!-- 
+1. TBD
+2. TBD
+3. TBD
+-->
 
-The following HTML routes should be created:
+## App Preview - Home Page Screenshot
 
-* `GET /notes` should return the `notes.html` file.
+<img alt="" src="./assets/images/home-page.png" width="100%" height="425"/>
 
-* `GET *` should return the `index.html` file.
+## App Preview - Note Page Screenshot
 
-The following API routes should be created:
-
-* `GET /api/notes` should read the `db.json` file and return all saved notes as JSON.
-
-* `POST /api/notes` should receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client. You'll need to find a way to give each note a unique id when it's saved (look into npm packages that could do this for you).
-
-
-## Bonus
-
-You haven’t learned how to handle DELETE requests, but this application offers that functionality on the front end. As a bonus, try to add the DELETE route to the application using the following guideline:
-
-* `DELETE /api/notes/:id` should receive a query parameter that contains the id of a note to delete. To delete a note, you'll need to read all notes from the `db.json` file, remove the note with the given `id` property, and then rewrite the notes to the `db.json` file.
-
-
-## Grading Requirements
-
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
-
-This Challenge is graded based on the following criteria: 
+<img alt="" src="./assets/images/home-page.png" width="100%" height="425"/>
 
 
-### Technical Acceptance Criteria: 40%
+## App Preview - Video Preview
+[Link to Video](https://www.youtube.com/watch?v=_hr9SKZC5Rc&feature=youtu.be)
 
-* Satisfies all of the preceding acceptance criteria plus the following:
+<img alt="" src="./assets/images/app-video-demo.gif" width="100%" height="425"/>
 
-  * Application front end must connect to an Express.js back end.
+## Tests
 
-  * Application back end must store notes that have a unique id in a JSON file.
+No tests are setup at this time.
 
-  * Application must be deployed to Heroku.
+## Contributing
 
+Contributor Covenant Code of Conduct
 
-### Deployment: 36%
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md)
 
-* Application deployed at live URL.
+<!-- DELETE THIS SECTION FOR THE FINAL README. For more information on example contribution guidelines please see the links below.
 
-* Application loads with no errors.
+1. Contributor Convent: [Information](https://www.contributor-covenant.org/)
+2. Contributor Covenant Code of Conduct: [Markdown File](hhttps://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md)
+-->
 
-* Application GitHub URL submitted.
+## Resources
 
-* GitHub repository contains application code.
+1. Project Manager: [Steve Calla - GitHub Profile](https://github.com/stevecalla)
+2. GitHub Repo: <https://github.com/stevecalla/note-taker>
+3. GitHub Hosted URL: <https://calla-note-taker.herokuapp.com/notes>
+4. Contact: [Email Steve](mailto:callasteven@gmail.com)
 
+## License 
 
-### Application Quality: 11%
+[![License:  MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+This project is licensed under the terms of the <span style="color:red">The MIT License</span>. Please click on the license badge for more information.
 
-* Application console is free of errors.
+<!-- DELETE THIS SECTION FOR THE FINAL README. Per Github, you are under no obligation to choose a license. However, without a license, the default copyright laws apply, meaning that you retain all rights to your source code and no one may reproduce, distribute, or create derivative works from your work. If you're creating an open source project, we strongly encourage you to include an open source license. The Open Source Guide provides additional guidance on choosing the correct license for your project. SEE THE FOLLOWING LINKS FOR MORE INFORMATION:
 
+1. GitHub: [Licensing a repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository)
+2. Open Source Guide: [To Choose A License](https://choosealicense.com/)
+-->
 
-### Repository Quality: 13%
+<!-- OTHER SECTIONS IF YOU LIKE
+## Technologies
 
-* Repository has a unique name.
+1. HTML
+2. CSS
+3. JavaScript
+4. GitHub (website hosting and source code management)
+5. TBD
+6. TBD
 
-* Repository follows best practices for file structure and naming conventions.
+### 3rd Party Application Programming Interfaces
 
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
+1. [TBD](https://TBD)
+2. [TBD](https://TBD)
+3. [TBD](https://TBD)
 
-* Repository contains multiple descriptive commit messages.
+### Dependencies
 
-* Repository contains quality README file with description, screenshot, and link to deployed application.
+1. [VS Code Live Server](https://ritwickdey.github.io/vscode-live-server/)
 
+## Collaborators
 
-### Bonus: +10 Points
+1. FIRST & LAST NAME: [Github LINK](https://github.com/<Github user name>/)
+2. FIRST & LAST NAME: [Github LINK](https://github.com/<Github user name>/)
+3. FIRST & LAST NAME: [Github LINK](https://github.com/<Github user name>/)
 
-* Application allows users to delete notes.
+## Resources
 
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository, with a unique name and a README describing the project.
-
-- - -
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+1. GitHub Repo: <https://github.com/tbd/tbd>
+2. GitHub Hosted URL: <https://tbd.tbd.com/tbd>
+-->
