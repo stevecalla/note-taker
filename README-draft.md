@@ -47,9 +47,13 @@ This app can be enhanced by (a) allowing the user to modify notes, (b) adding ad
 3. TBD
 -->
 
-## App Preview - Static Screenshot
+## App Preview - Home Page Screenshot
 
-<img alt="" src="./assets/images/webpage-static-image.jpeg" width="100%" height="425"/>
+<img alt="" src="./assets/images/home-page.png" width="100%" height="425"/>
+
+## App Preview - Note Page Screenshot
+
+<img alt="" src="./assets/images/home-page.png" width="100%" height="425"/>
 
 
 ## App Preview - Video Preview
