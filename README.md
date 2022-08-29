@@ -84,7 +84,7 @@ Contributor Covenant Code of Conduct
 
 1. Project Manager: [Steve Calla - GitHub Profile](https://github.com/stevecalla)
 2. GitHub Repo: <https://github.com/stevecalla/note-taker>
-3. GitHub Hosted URL: <https://calla-note-taker.herokuapp.com/notes>
+3. Heroku Hosted URL: <https://calla-note-taker.herokuapp.com/notes>
 4. Contact: [Email Steve](mailto:callasteven@gmail.com)
 
 ## License 
