@@ -14,11 +14,9 @@
 
 ## Description
 
-```
 This app allows the user to track tasks by providng the ability to write, save and delete notes. When the user opens Note Taker, a landing page is presented with a link to the notes page. After clicking on the link to the notes page the user is presented with a list of existing notes in the left hand column along a note taking feature in the right hand column. 
 
 The user can use the note taking feature to enter the note title and text then click the save button to populate the note in the left hand column with other notes. If the user would like to enter another note, the plus symbol clears the note taking feature. If the user would like delete a note they can click on the delete (trash) icon. 
-```
 
 ## Installation
 
