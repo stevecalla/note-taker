@@ -47,13 +47,13 @@ const deleteNote = (id) =>
     method: 'DELETE',
     headers: {
       'Content-Type': 'application/json',
-    },
+    }
   });
 
 const renderActiveNote = (id) => { //section added id param
   hide(saveNoteBtn);
 
-  // if (activeNote .id) {
+  // if (activeNote.id) {
   if (id) { //section replaced activeNote.id with id passed in
     // console.log('yes'); //section
     noteTitle.setAttribute('readonly', true);
@@ -85,13 +85,14 @@ const handleNoteDelete = (e) => {
   e.stopPropagation();
 
   const note = e.target;
-  const noteId = JSON.parse(note.parentElement.getAttribute('data-note')).id;
+  const noteId = JSON.parse(note.parentElement.getAttribute('data-note')).note_id;
 
-  if (activeNote.id === noteId) {
+  if (activeNote !== null && activeNote.id === noteId) {
     activeNote = {};
   }
 
   deleteNote(noteId).then(() => {
+    console.log('c = noteId = ', noteId)
     getAndRenderNotes();
     renderActiveNote();
   });
@@ -102,8 +103,8 @@ const handleNoteView = (e) => {
   e.preventDefault();
   // console.log('hello'); //section
   activeNote = JSON.parse(e.target.parentElement.getAttribute('data-note'));
-  // console.log(activeNote, activeNote.note_id); //section
-  renderActiveNote(activeNote.note_id); //section passed activeNote.id
+  console.log(activeNote); //section
+  if (activeNote !== null) {renderActiveNote(activeNote.note_id)}; //section passed activeNote.id
 };
 
 // Sets the activeNote to an empty object and allows the user to enter a new note
