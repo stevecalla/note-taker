@@ -50,10 +50,12 @@ const deleteNote = (id) =>
     },
   });
 
-const renderActiveNote = () => {
+const renderActiveNote = (id) => { //section added id param
   hide(saveNoteBtn);
 
-  if (activeNote.id) {
+  // if (activeNote .id) {
+  if (id) { //section replaced activeNote.id with id passed in
+    // console.log('yes'); //section
     noteTitle.setAttribute('readonly', true);
     noteText.setAttribute('readonly', true);
     noteTitle.value = activeNote.title;
@@ -98,11 +100,13 @@ const handleNoteDelete = (e) => {
 // Sets the activeNote and displays it
 const handleNoteView = (e) => {
   e.preventDefault();
+  // console.log('hello'); //section
   activeNote = JSON.parse(e.target.parentElement.getAttribute('data-note'));
-  renderActiveNote();
+  // console.log(activeNote, activeNote.note_id); //section
+  renderActiveNote(activeNote.note_id); //section passed activeNote.id
 };
 
-// Sets the activeNote to and empty object and allows the user to enter a new note
+// Sets the activeNote to an empty object and allows the user to enter a new note
 const handleNewNoteView = (e) => {
   activeNote = {};
   renderActiveNote();
@@ -133,7 +137,7 @@ const renderNoteList = async (notes) => {
     const spanEl = document.createElement('span');
     spanEl.classList.add('list-item-title');
     spanEl.innerText = text;
-    spanEl.addEventListener('click', handleNoteView);
+    spanEl.addEventListener('click', handleNoteView); //section identified event listener for note list items
 
     liEl.append(spanEl);
 
