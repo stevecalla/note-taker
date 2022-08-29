@@ -49,7 +49,9 @@ This app can be enhanced by (a) allowing the user to modify notes, (b) adding ad
 
 ## App Preview - Home Page Screenshot
 
-<img alt="" src="./assets/images/home-page.png" width="100%" height="425"/>
+<!-- <img alt="" src="./assets/images/home-page.png" width="100%" height="425"/> -->
+
+<img alt="" src="public/assets/images/home-page.png" width="100%" height="425"/>
 
 ## App Preview - Note Page Screenshot
 
@@ -60,7 +62,9 @@ This app can be enhanced by (a) allowing the user to modify notes, (b) adding ad
 ## App Preview - Video Preview
 [Link to Video](https://youtu.be/odtZNxBx4_c)
 
-<img alt="" src="./assets/images/note-taker-video.gif" width="100%" height="425"/>
+<!-- <img alt="" src="./assets/images/note-taker-video.gif" width="100%" height="425"/> -->
+
+<img alt="" src="public/assets/images/note-taker-video.gif" width="100%" height="425"/>
 
 ## Tests
 
