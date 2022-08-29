@@ -33,4 +33,25 @@ const readAndAppend = (content, file) => {
   });
 };
 
+// const readAndDelete = (nodeId, file) => {
+//   fs.readFile(file, 'utf8', (err, data) => {
+//     if (err) {
+//       console.error(err);
+//     } else {
+//       const parsedData = JSON.parse(data);
+
+//       for (let i = 0; i < parsedData.length; i++) {
+//         if(parsedData[i].note_id === nodeId) {
+//           console.log('MATCH =', i);
+//           parsedData.splice(i, 1);
+//         } else {
+//           console.log('NO MATCH ', i);
+//         }
+//       }
+
+//       writeToFile(file, parsedData);
+//     }
+//   });
+// };
+
 module.exports = { readFromFile, writeToFile, readAndAppend };
