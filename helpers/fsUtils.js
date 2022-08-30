@@ -24,8 +24,9 @@ const readAndAppend = (content, file) => {
 const readAndDelete = (noteId, file) => {
   fs.readFile(file, 'utf8', (err, data) => {
     if (err) {
-      console.error(err);
+      console.error('5 = ', err);
     } else {
+      const parsedData = JSON.parse(data);
       let updatedData = deleteFromFile(noteId, parsedData);
       writeToFile(file, updatedData);
     }
