@@ -28,7 +28,6 @@ notes.route('/')
 
   notes.route('/:id')
     .delete((req, res) => {
-      console.log('Req params = ', req.params.id);
       if (req.params.id) {
         const noteId = req.params.id;
         readAndDelete(noteId, './db/notes.json');
